@@ -1,0 +1,32 @@
+.top-navbar{
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  .wrap{
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .navbar-list{
+    display: flex;
+  }
+  .navbar-items{
+    margin-right: 30px;
+    font-size: 16px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .navbar-link{
+    color: #ffffff;
+  }
+  .navbar-link__active{
+    color: var(--accent-color);
+  }
+}
