@@ -43,7 +43,7 @@
 			<nav class="nav">
 				<ul class="navbar-list">
 					<li class="navbar-items">
-						<a href="#aboutUs" class="navbar-link navbar-link__active">О нас</a>
+						<a href="#aboutUs" class="navbar-link">О нас</a>
 					</li>
 					<li class="navbar-items">
 						<a href="#collectedShipments" class="navbar-link">Сборные грузы</a>
@@ -406,7 +406,7 @@
 	<section class="reviews section">
 		<div class="wrap">
 			<h2 class="title">Отзывы клиентов</h2>
-			<div class="slider">
+			<div class="slider" id="slider">
 				<div class="slider-nav">
 					<button class="prev">
 						<img src="./images/dist/arrow-prev.png" alt="prev">
@@ -417,12 +417,54 @@
 				</div>
 				<!-- /.slider-nav -->
 				<div class="slider-content">
-					"Работали не первый раз, все отлично, сопровождение авто, так же адекватные ставки и лояльное отношение. Рекомендуем!"
+					<div class="slide-wrap">
+						<div class="slides slide-active">
+							<div class="author-text">
+								"Работаем не первый раз с данной компанией. Все четко и в срок.
+								Будем рады работать и дальше.
+								РЕКОМЕДУЕМ для сотрудничества."
+							</div>
+							<!-- /.slide-text -->
+						</div>
+						<!-- /.slides -->
+						<div class="slides">
+							<div class="author-text">
+								"Работали впервые. Порадовало решение трудностей, а так-же
+								понимание специфики перевозок"
+							</div>
+							<!-- /.slide-text -->
+							<div class="author-name">Виктор</div>
+							<!-- /.author-name -->
+						</div>
+						<!-- /.slides -->
+						<div class="slides">
+							<div class="author-text">
+								"Очень ответственный и добросовестный перевозчик.
+								Качество услуг на высоте, что не мало важно в нашей работе!
+								Надеемся на дальнейшее сотрудничество, Рекомендуем!"
+							</div>
+							<!-- /.slide-text -->
+							<div class="author-name">Ольга</div>
+							<!-- /.author-name -->
+						</div>
+						<!-- /.slides -->
+						<div class="slides">
+							<div class="author-text">
+								"Работали не первый раз, все отлично, сопровождение авто,
+								так же адекватные ставки и лояльное отношение. Рекомендуем!"
+							</div>
+							<!-- /.slide-text -->
+							<div class="author-name">
+								Андрей
+							</div>
+							<!-- /.author-name -->
+						</div>
+						<!-- /.slides -->
+					</div>
+					<!-- /.slide-wrap -->
 				</div>
 				<!-- /.slider-content -->
 				<div class="slider-pagination">
-					<span class="pagination pagination-active"></span>
-					<span class="pagination"></span>
 				</div>
 				<!-- /.slider-pagination -->
 			</div>
@@ -431,11 +473,11 @@
 			<form class="form" action="" method="post">
 				<div>
 					<label for="reviewsName">Как вас зовут?</label>
-					<input type="text" id="reviewsName" placeholder="Ваше имя">
+					<input type="text" id="reviewsName" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{2,}">
 				</div>
 				<div>
 					<label for="reviewsPhone">Укажите телефон</label>
-					<input type="text" id="reviewsPhone" placeholder="ваш телефон">
+					<input type="text" id="reviewsPhone" placeholder="ваш телефон" required pattern="[+]{0,}[0-9]{12,}">
 				</div>
 				<div>
 					<button type="submit" class="btn">Заказать звонок</button>
@@ -466,12 +508,12 @@
 						<input id="weight" type="text" placeholder="Общий вес">
 					</div>
 					<div>
-						<label for="transport">Оптимальный вид транспорта</label>
-						<input id="transport" type="text" placeholder="Оптимальный вид транспорта">
+						<label for="transport">Ваше имя</label>
+						<input id="transport" type="text" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-яЁё]{2,}">
 					</div>
 					<div>
 						<label for="phone">Телефон</label>
-						<input id="phone" type="text" placeholder="+375 00 000-00-00">
+						<input id="phone" type="text" placeholder="+375 00 000-00-00" required pattern="[+]{0,}[0-9]{12,}">
 					</div>
 					<div>
 						<label for="mail">E-mail</label>
