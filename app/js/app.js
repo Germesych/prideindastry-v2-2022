@@ -142,4 +142,42 @@ document.addEventListener('DOMContentLoaded', () => {
       elNavLink[4].classList.add('navbar-link__active')
     }
   });
+
+  // mobile-menu
+  //
+  //
+  //
+  const mobilMenu = document.querySelector('.mobile-menu')
+  const mobileMenuBtn = document.querySelector('.mobile-menu__btn')
+  const mobileMenuList = document.querySelector('.mobile-menu__list')
+  const mobileMenuClose = document.querySelector('.mobile-menu__close')
+  if(mobileMenuBtn){
+    mobileMenuBtn.addEventListener('click', openMobileMenu)
+  }
+  if(mobileMenuClose){
+    mobileMenuClose.addEventListener('click', closeMobileMenu)
+  }
+  if(mobilMenu){
+    mobilMenu.addEventListener('click', (e)=>{
+      if(e.target.classList.contains('mobile-menu__link')){
+        setTimeout( function timer(){
+          mobileMenuList.style.display = 'none'
+        }, 500);
+        mobileMenuList.style.opacity = '0'
+      }
+    })
+  }
+
+  function openMobileMenu(){
+    mobileMenuList.style.display = 'block'
+    setTimeout( ()=>{
+      mobileMenuList.style.opacity = '1'
+    }, 100);
+  }
+  function closeMobileMenu(){
+    setTimeout( ()=>{
+      mobileMenuList.style.display = 'none'
+    }, 500);
+    mobileMenuList.style.opacity = '0'
+  }
 })

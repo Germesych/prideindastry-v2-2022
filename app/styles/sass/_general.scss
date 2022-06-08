@@ -24,6 +24,13 @@ a{
   display: inline-block;
   text-decoration: none;
 }
+ul{
+  padding-inline-start: 20px;
+}
+
+ol{
+  padding-inline-start: 20px;
+}
 
 h1{
   font-weight: bold;
@@ -197,4 +204,58 @@ img{
   background: #ffffff !important;
   padding: 0 5px !important;
   transition: top .3s;
+}
+.mobile-menu{
+  position: relative;
+  ul{
+    list-style: none;
+    margin: 0;
+  }
+  .tel-block{
+    display: inline-block;
+  }
+}
+.mobile-menu__btn{
+  background: url("../../images/dist/icon/menu-black.svg") no-repeat center;
+  background-size: contain;
+  width: 38px;
+  height: 50px;
+  border: none;
+}
+.mobile-menu__list{
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--block-bg);
+  padding: 40px 25px;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+.mobile-menu__items{
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.mobile-menu__link{
+  position: relative;
+  font-size: 21px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.mobile-menu__close{
+  background-image: url("../../images/dist/icon/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
 }
