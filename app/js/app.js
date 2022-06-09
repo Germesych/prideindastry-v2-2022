@@ -144,9 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // mobile-menu
-  //
-  //
-  //
   const mobilMenu = document.querySelector('.mobile-menu')
   const mobileMenuBtn = document.querySelector('.mobile-menu__btn')
   const mobileMenuList = document.querySelector('.mobile-menu__list')

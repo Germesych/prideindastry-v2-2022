@@ -134,6 +134,9 @@ img{
   }
   .col{
     position: relative;
+    a{
+      color: #ffffff;
+    }
   }
   .block-icon{
     position: absolute;
@@ -258,4 +261,61 @@ img{
   right: 20px;
   width: 38px;
   height: 38px;
+}
+.thank-you-page{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient( rgba(75, 75, 75, 0.8), rgba(0, 0, 0, 0.5)), url("../../images/dist/header-bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  a{
+    color: #ffffff;
+    padding: 12px 20px;
+    background: var(--accent-color);
+    border-radius: 3px;
+  }
+}
+.error-404{
+  background-image: linear-gradient( rgba(75, 75, 75, 0.8), rgba(0, 0, 0, 0.5)), url("../../images/dist/header-bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  h1{
+    color: rgba(255, 0, 0, 0.6);
+  }
+  h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  a{
+    color: #ffffff;
+    padding: 12px 20px;
+    background: var(--accent-color);
+    border-radius: 3px;
+  }
 }
