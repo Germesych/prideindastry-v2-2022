@@ -3,8 +3,14 @@
   .mobile-menu{
     display: none;
   }
+  .top-navbar .tel-block{
+    display: none;
+  }
 }
 @media (max-width: 980px){
+  .top-navbar .tel-block{
+    display: none;
+  }
   .we-work .arrow{
     display: none;
   }
@@ -19,9 +25,6 @@
   }
   .slides{
     font-size: 16px;
-  }
-  .top-navbar{
-    display: none;
   }
   .top-header .content{
     left: 0;
@@ -44,10 +47,6 @@
   }
   .top-header .tel-block .block-icon{
     right: -35px;
-  }
-  .tel-block{
-  }
-  .btn-modal{
   }
   .top-header .logo{
     display: none;
@@ -163,10 +162,45 @@
   .reviews .slide-wrap{
     height: 200px;
   }
+  .top-header{
+    .tel-block{
+      display: none;
+    }
+  }
+  .top-header .logo{
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 24px;
+  }
+  .top-navbar{
+    display: block;
+    .btn-modal{
+      font-size: 22px;
+    }
+  }
+  .top-navbar{
+    height: 40px;
+    .nav{
+      display: none;
+    }
+    .tel-block{
+      display: inline-block;
+      margin: 0 auto;
+      .block-icon{
+        top: 0;
+        right: -40px;
+      }
+      a{
+        color: #ffffff;
+      }
+    }
+  }
 }
 @media (max-width: 380px){
-  .tel-block{
-    display: none;
+  .top-header .logo{
+    font-size: 18px;
+    display: inline-block;
+    margin-top: -10px;
   }
   .top-header{
     height: 70vh;
@@ -175,5 +209,10 @@
         font-size: 30px;
       }
     }
+  }
+}
+@media (max-width: 330px){
+  .top-header .logo{
+    display: none;
   }
 }
