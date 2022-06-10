@@ -15,7 +15,10 @@
     padding: 20px;
   }
   .reviews .slide-wrap{
-    height: 120px;
+    height: 100px;
+  }
+  .slides{
+    font-size: 16px;
   }
   .top-navbar{
     display: none;
@@ -79,10 +82,58 @@
   .about-us .content{
     font-size: 16px;
   }
+  .we-work{
+    font-size: 16px;
+  }
+  .come-us{
+    font-size: 16px;
+  }
   .come-us__card-title{
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     margin-bottom: 15px;
+  }
+  .title{
+    margin-bottom: 10px;
+  }
+  .collected-shipments{
+    position: relative;
+    background-image: linear-gradient( rgba(26, 26, 26, 0.5), rgba(38, 38, 38, 0.5)), url("../../images/dist/shipments/2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 60px 0;
+    .bg-light{
+      background: rgba(240, 240, 241, 0.95);
+      padding: 20px 10px;
+      border-radius: 20px;
+    }
+  }
+  .complete-shipments{
+    font-size: 16px;
+  .flex{
+    flex-direction: column-reverse;
+    .col{
+      width: 100%;
+    }
+    .img-bg{
+      margin-bottom: 25px;
+    }
+  }
+  }
+  .other-shipments{
+    font-size: 16px;
+    .flex{
+      flex-direction: column;
+      .col{
+        width: 100%;
+      }
+      .img-bg{
+        margin-bottom: 25px;
+      }
+    }
   }
 }
 @media (max-width: 680px){
@@ -90,6 +141,9 @@
     flex-direction: column;
     align-items: center;
     margin: 0 0 25px 0;
+  }
+  .our-routes{
+    font-size: 16px;
   }
 }
 @media (max-width: 580px){}

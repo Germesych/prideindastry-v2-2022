@@ -87,6 +87,7 @@ h1{
 }
 .section{
   padding: 40px 0;
+  font-size: 21px;
 }
 .flex{
   display: flex;
@@ -318,4 +319,7 @@ img{
     background: var(--accent-color);
     border-radius: 3px;
   }
+}
+p{
+  margin-bottom: 7px;
 }
