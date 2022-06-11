@@ -8,7 +8,7 @@
     </div>
     <div>
       <label for="modal-phone">Ваш номер телефона</label>
-      <input id="modal-phone" type="text" required pattern="[+]{0,}[0-9]{12,}">
+      <input id="modal-phone" type="text" required min="3">
     </div>
     <button type="submit" class="btn">Отправить</button>
   </form>
@@ -697,7 +697,7 @@
         </div>
         <div>
           <label for="reviewsPhone">Укажите телефон</label>
-          <input type="text" id="reviewsPhone" placeholder="ваш телефон" required pattern="[+]{0,}[0-9]{12,}">
+          <input type="text" id="reviewsPhone" placeholder="ваш телефон" required min="3">
         </div>
         <div>
           <button type="submit" class="btn">Заказать звонок</button>
@@ -732,7 +732,7 @@
           </div>
           <div>
             <label for="phone">Телефон</label>
-            <input id="phone" type="text" placeholder="+375 00 000-00-00" required pattern="[+]{0,}[0-9]{12,}">
+            <input id="phone" type="text" placeholder="+375 00 000-00-00" min="3">
           </div>
           <div>
             <label for="mail">E-mail</label>

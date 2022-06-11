@@ -203,6 +203,11 @@ img{
     }
   }
 }
+.modalOpen{
+  position: relative;
+  z-index: 9999;
+  height: 100%;
+}
 .label-focus{
   top: 0 !important;
   background: #ffffff !important;
@@ -236,7 +241,7 @@ img{
   height: 100vh;
   background: var(--block-bg);
   padding: 40px 25px;
-  z-index: 9999;
+  z-index: 99999;
   transition: opacity 0.5s ease-out;
 }
 .mobile-menu__items{
@@ -322,4 +327,8 @@ img{
 }
 p{
   margin-bottom: 7px;
+}
+.hidden{
+  display: none !important;
+  opacity: 0;
 }
